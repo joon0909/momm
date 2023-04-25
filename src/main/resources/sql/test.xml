@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="site.jwhy.momm.momm.mapper.TestMapper">
+    <select id="selectTest" resultType="site.jwhy.momm.momm.model.res.TestRes" parameterType="site.jwhy.momm.momm.model.req.TestReq">
+        SELECT testValue
+        FROM test
+        WHERE testNum = #{testNum}
+    </select>
+</mapper>
